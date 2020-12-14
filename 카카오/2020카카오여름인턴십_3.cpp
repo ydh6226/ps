@@ -8,7 +8,8 @@ vector<int> solution(vector<string> gems) {
     map<string, int> map;
     int left = 0, right = 0, min_len= gems.size();
 
-    while (left <= right && left < gems.size()) {
+    //left <= right && left < gems.size()
+    while (true) {
         if (map.size() == set.size()) {
             if (min_len > right - left - 1) {
                 min_len = right - left - 1;

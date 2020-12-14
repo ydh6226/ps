@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+ï»¿#include<bits/stdc++.h>
 
 using namespace std;
 
@@ -12,7 +12,7 @@ int solution(string str1, string str2) {
 
     for (int i = 0; i < str1.size() - 1; i++)
         if (isalpha(str1[i]) && isalpha(str1[i + 1])) {
-            a[str1.substr(i,2)]++;
+            a[str1.substr(i, 2)]++;
         }
 
     for (int i = 0; i < str2.size() - 1; i++)
@@ -21,7 +21,7 @@ int solution(string str1, string str2) {
             a[str2.substr(i, 2)];
         }
 
-    //auto ´ë½Å pair<string, int> »ç¿ë °¡´É
+    //auto ëŒ€ì‹  pair<string, int> ì‚¬ìš© ê°€ëŠ¥
     for (auto x : a) {
         int num1 = x.second;
         int num2 = b[x.first];

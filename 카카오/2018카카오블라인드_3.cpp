@@ -21,7 +21,7 @@ int solution(string str1, string str2) {
             a[str2.substr(i, 2)];
         }
 
-    //auto 대신 pair<string, int> 사용 가능
+    //auto 대신 pair<string, int> 사용 가능.
     for (auto x : a) {
         int num1 = x.second;
         int num2 = b[x.first];
